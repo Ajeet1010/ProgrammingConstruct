@@ -7,8 +7,8 @@ namespace ProgrammingConstruct
         static void Main(string[] args)
         {
             Console.WriteLine("*****  Programming Construct Problems  *****");
-            Integer integer = new Integer();
-            integer.Equals();
+            Odd odd = new Odd();
+            odd.No();
         }
     }
 }
