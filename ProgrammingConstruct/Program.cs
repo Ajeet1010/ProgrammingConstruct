@@ -8,7 +8,7 @@ namespace ProgrammingConstruct
         {
             Console.WriteLine("*****  Programming Construct Problem  *****");
             SwitchCase switchCase = new SwitchCase();
-            switchCase.Weekdays();
+            switchCase.ArithematicOperation();
         }
     }
 }

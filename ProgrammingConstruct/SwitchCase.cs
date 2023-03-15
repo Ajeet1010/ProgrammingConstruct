@@ -6,39 +6,42 @@ using System.Threading.Tasks;
 
 namespace ProgrammingConstruct
 {
-    // UC6: Print week days using SWITCH Case.
+    // UC7: Perform arithmatic operation using SWITCH Case.
     internal class SwitchCase
     {
-        public void Weekdays()
+        public void ArithematicOperation()
         {
-            Console.Write("Enter the no of day:  ");
-            int day = Convert.ToInt32(Console.ReadLine());
 
-            switch (day)
+            Console.WriteLine("Choose which arithematic operator to perform\n1. Addition\n2. Subtraction\n3" +
+                " Multiplication\n4. Division\n");
+            Console.Write("You want to perform operator:  ");
+            int option = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter the first no:  ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the second no:  ");
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            switch (option)
             {
                 case 1:
-                    Console.Write("It's Monday today");
+                    int result = a + b;
+                    Console.Write("SUM of two no {0} & {1} is:  {2}", a, b, result);
                     break;
                 case 2:
-                    Console.WriteLine("It's Tuesday today");
+                    int result1 = a - b;
+                    Console.WriteLine("Differnce between two no {0} & {1} is:  {2}", a, b, result1);
                     break;
                 case 3:
-                    Console.WriteLine("It's Wednesday today");
+                    int result2 = a * b;
+                    Console.WriteLine("After Multiplication of the no {0} & {1} we get result: {2}", a, b, result2);
                     break;
                 case 4:
-                    Console.WriteLine("It's Thursday today");
-                    break;
-                case 5:
-                    Console.WriteLine("Hurrah!\nIt's Friday today");
-                    break;
-                case 6:
-                    Console.WriteLine("It's weekend\nLet's have some fun today's Saturday night");
-                    break;
-                case 7:
-                    Console.WriteLine("Oops! Enjoy moment end today\nIt's Sunday yaar.......");
+                    float result3 = a / b;
+                    Console.WriteLine("After division of {0} & {1} we get {2}", a, b, result3);
                     break;
                 default:
-                    Console.WriteLine("Are you MAD?\nIt's only 7(SEVEN) days in a week");
+                    Console.WriteLine("OOPS! Out of arithematic operation choice");
                     break;
             }
         }
