@@ -7,8 +7,8 @@ namespace ProgrammingConstruct
         static void Main(string[] args)
         {
             Console.WriteLine("*****  Programming Construct Problem  *****");
-            Largest largest = new Largest();
-            largest.No();
+            SwitchCase switchCase = new SwitchCase();
+            switchCase.Weekdays();
         }
     }
 }
