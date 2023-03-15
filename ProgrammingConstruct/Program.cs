@@ -7,8 +7,8 @@ namespace ProgrammingConstruct
         static void Main(string[] args)
         {
             Console.WriteLine("*****  Programming Construct Problem  *****");
-            SwitchCase switchCase = new SwitchCase();
-            switchCase.ArithematicOperation();
+            ForLoop forLoop = new ForLoop();
+            forLoop.Powerof2();
         }
     }
 }
