@@ -6,17 +6,22 @@ using System.Threading.Tasks;
 
 namespace ProgrammingConstruct
 {
-    // UC8: Program that input from USER and print a table of the 2's power.
+    // UC10: Program to print until user entered SQUARE.
     internal class ForLoop
     {
-        public void Powerof2()
+        public void Factorial()
         {
-            Console.Write("\nEnter the no to check power value until that power:  ");
+            int i, fact = 1;
+            Console.Write("Enter the no to print factorial:  ");
             int num = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i <= num; i++)
+
+            // using for loop to calculate for loop.
+            for (i = 1; i <= num; i++)
             {
-                Console.WriteLine("2^" + i + " = " + Math.Pow(2, i));
+                fact = fact * i;
             }
+
+            Console.WriteLine("\nFactorial of {0} is:  {1}", num, fact);
         }
     }
 }
