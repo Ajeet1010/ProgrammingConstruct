@@ -8,7 +8,7 @@ namespace ProgrammingConstruct
         {
             Console.WriteLine("*****  Programming Construct Problem  *****");
             ForLoop forLoop = new ForLoop();
-            forLoop.Factorial();
+            forLoop.SumOfSquare();
         }
     }
 }

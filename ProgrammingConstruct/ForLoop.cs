@@ -6,22 +6,23 @@ using System.Threading.Tasks;
 
 namespace ProgrammingConstruct
 {
-    // UC10: Program to print until user entered SQUARE.
+    // UC9: Program to reads a number N and prints the sum of squares of N numbers starting from 1..
     internal class ForLoop
     {
-        public void Factorial()
+        public void SumOfSquare()
         {
-            int i, fact = 1;
-            Console.Write("Enter the no to print factorial:  ");
+            int i, sum = 0;
+            Console.Write("Enter the no to find square:  ");
             int num = Convert.ToInt32(Console.ReadLine());
 
             // using for loop to calculate for loop.
             for (i = 1; i <= num; i++)
             {
-                fact = fact * i;
+                sum += i*i;
             }
+            //return sum;
 
-            Console.WriteLine("\nFactorial of {0} is:  {1}", num, fact);
+            Console.WriteLine("\nSum of SQUARE until {0} is:  {1}", num, sum);
         }
     }
 }
