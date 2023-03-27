@@ -6,39 +6,20 @@ using System.Threading.Tasks;
 
 namespace ProgrammingConstruct
 {
-    // UC11: Program to Flip Coin problem till either Heads or Tails wins 20 times.
+    // UC12: Program to reverse a string .
     internal class WhileLoop
     {
-        public void FlipCoin()
+        public void ReverseString()
         {
-            Random random = new Random();
-            int heads = 0;
-            int tails = 0;
+            Console.Write("Enter the word or string to Reverse:  ");
+            String userinput = Console.ReadLine();
+            string ReversedWord = " ";
+            char[] ch = userinput.ToCharArray();
+            Array.Reverse(ch);
+            string reverse = new String(ch);
+            Console.WriteLine(reverse);
 
-            while (heads < 20 && tails < 20)
-            {
-                int toss = random.Next(2);
-                if (toss == 0)
-                {
-                    heads++;
-                    Console.WriteLine("Heads");
-                }
-                else
-                {
-                    tails++;
-                    Console.WriteLine("Tails");
-                }
-                
-            }
-
-            if (heads == 20)
-            {
-                Console.WriteLine("Head comes 20 times\nHeads wins!");
-            }
-            else
-            {
-                Console.WriteLine("Tail comes 20 times\nTails wins!");
-            }
+            
         }
 
     }
