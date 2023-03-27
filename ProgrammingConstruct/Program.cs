@@ -8,7 +8,7 @@ namespace ProgrammingConstruct
         {
             Console.WriteLine("*****  Programming Construct Problem  *****");
             WhileLoop whileLoop = new WhileLoop();
-            whileLoop.ReverseString();
+            whileLoop.SumofNatural();
         }
     }
 }

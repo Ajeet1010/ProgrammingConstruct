@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace ProgrammingConstruct
 {
-    // UC12: Program to reverse a string .
+    // UC12: Program to print sum of first five natural numbers.
     internal class WhileLoop
     {
-        public void ReverseString()
+        public void SumofNatural()
         {
-            Console.Write("Enter the word or string to Reverse:  ");
-            String userinput = Console.ReadLine();
-            string ReversedWord = " ";
-            char[] ch = userinput.ToCharArray();
-            Array.Reverse(ch);
-            string reverse = new String(ch);
-            Console.WriteLine(reverse);
+            int i = 1, sum = 0;
 
-            
+            Console.Write("The first 5 natural number are : ");
+            while (i <= 5)
+            {
+                sum = sum + i;
+                Console.Write("{0} ", i);
+                i++;
+            }
+            Console.Write("\nThe Sum of first five natural no is : {0}\n", sum);
         }
 
     }
